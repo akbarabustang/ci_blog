@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 // custom routing
+$route['posts/create'] = 'posts/create';
 $route['posts/(:any)'] = 'posts/view/$1';
 $route['posts'] = 'posts/index';
 $route['(:any)'] = 'pages/view/$1';
