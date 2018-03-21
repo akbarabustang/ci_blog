@@ -1,6 +1,11 @@
 .post-date{
-    backround:#f4f4f4;
+    background-color:#f4f4f4;
     padding:4px;
     margin:3px 0;
     display:block;
+}
+
+.img-responsive img{
+    max-width: 100%;
+    height: auto;
 }
