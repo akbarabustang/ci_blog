@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url() ?>assets/css/flatly.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url() ?>assets/css/custom.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url() ?>assets/css/style.css" />
+    <script src="<?php echo base_url() ?>assets/ckeditor/ckeditor.js"></script>
     
 </head>
 <body>
@@ -28,6 +29,11 @@
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url() ?>posts">Blog</a>
             </li>  
+          </ul>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url() ?>posts/create" >Create Post</a>
+            </li>
           </ul>
         </div>
       </div>

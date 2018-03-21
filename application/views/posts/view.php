@@ -6,12 +6,10 @@
             <div class="post-body">
                 <?php echo $post['body'] ?>
             </div>
+            <hr>
+            <?php echo anchor('/posts/edit/'.$post['slug'], 'Edit', array('class'=>'btn btn-primary pull-left')) ?>
+            <?php echo anchor('/posts/delete/'.$post['id'], 'Delete', array('class'=>'btn btn-danger')) ?>
+            
         </div>
     </div>
 </div>
-
-<hr>
-
-<?php echo form_open('/posts/delete/'.$post['id']) ?>
-<input type="submit" value="Delete" class="btn btn-danger">
-</form>

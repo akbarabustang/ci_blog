@@ -11,7 +11,7 @@
 
                 <div class="form-group">
                     <label>Body</label>
-                    <textarea name="body" class="form-control" cols="30" rows="10" placeholder="Add Body">
+                    <textarea name="body" id="editor" class="form-control" cols="30" rows="10" placeholder="Add Body">
                     </textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" >Submit</button>
