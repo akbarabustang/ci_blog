@@ -37,14 +37,14 @@ class Posts_model extends CI_Model{
 
     public function update_post(){
         $slug = url_title($this->input->post('title'));
-
+        $id = $this->input->post('id');
         $data = array(
             'title' => $this->input->post('title'),
             'slug' => $slug,
             'body' => $this->input->post('body'),
             'category_id' => $this->input->post('category_id')
         );
-        $this->db->where('id', $this->input->post('id'));
+        $this->db->where('id', $id);
         $this->db->update('tbl_posts', $data);
         
         
